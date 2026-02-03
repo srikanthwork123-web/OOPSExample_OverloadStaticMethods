@@ -13,7 +13,19 @@ Method Overloading It doesn't depend on method return type and static method or 
 Same method combination should not repeat.
 If you repeat same combination it will throw compile time error.
         */
+        /*
+         1)Static Constructor doesn't contain any parameters.
+        2)And if you provide parameters to the static constructor it will throw an Error .
+        3) Static Constructor doesn't Overload
+        static myclass()
+        {
 
+        }
+        static myclass(int a)if you provide parameters to the static constructor it will throw an Error .
+        {
+
+        }
+        */
         internal static void print()//0 parameter static method
         {
             Console.WriteLine("zero parameter is calling");
