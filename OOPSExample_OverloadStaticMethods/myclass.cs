@@ -41,6 +41,25 @@ If you repeat same combination it will throw compile time error.
         {
             Console.WriteLine("Five parameter print :" + a + b + c+d+e);
         }
+        internal  void print(string a)////single parameter non static/normal  method
+        {
+            Console.WriteLine("single parameter print :" + a);
+        }
+        internal void print(string a,string b)////Two parameter non static/normal  method
+        {
+            Console.WriteLine("two parameter print :" + a+b);
+        }
+        internal string print(string a, string b,string c)////Three parameter non static/normal  method
+        {
+            Console.WriteLine("two parameter print :" + a + b+c);
+            return a + b + c;
+        }
+        internal int print(string a, string b, string c,string d)////Four parameter non static/normal  method
+        {
+            int  result = int.Parse(a) + int.Parse(b) + int.Parse(c)+int.Parse(d);
+            Console.WriteLine("Four parameter print :" + a + b + c+d);
+            return result;
+        }
         /*   don't repeat same combination in normal methods (or)static methods in overloading concept
         internal static void print(int a)//if same combination is repeat it will throw compiletime error
         {
@@ -48,18 +67,18 @@ If you repeat same combination it will throw compile time error.
         }
         */
         //overloading doesn't depend method return type  and static or non static method.it will always depeds on methodname same and parameter should be diffrent
-       /*
-        internal string print(int a)//single parameter  non static method(here it is throwing compile time error)same combination repeated.
-        {
-            Console.WriteLine("one parameter print :" + a);
-            return "abc";
-        }
-        internal void print(int a)//single parameter  non static method(here it is throwing compile time error)same combination repeated.
-        {
-            Console.WriteLine("one parameter print :" + a);
-            
-        }
-       */
+        /*
+         internal string print(int a)//single parameter  non static method(here it is throwing compile time error)same combination repeated.
+         {
+             Console.WriteLine("one parameter print :" + a);
+             return "abc";
+         }
+         internal void print(int a)//single parameter  non static method(here it is throwing compile time error)same combination repeated.
+         {
+             Console.WriteLine("one parameter print :" + a);
+
+         }
+        */
 
     }
 }

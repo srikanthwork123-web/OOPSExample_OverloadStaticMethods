@@ -10,12 +10,22 @@ namespace OOPSExample_OverloadStaticMethods
     {
         static void Main(string[] args)
         {
+            //==========overloading static methods==================
+            //static methods we are calling with(classname.methodname());
             myclass.print();//0 parameter combination method calling
             myclass.print(10);//single parameter combination method calling
             myclass.print(10, 20);//Two parameter combination method calling
             myclass.print(10, 20,30);//Three parameter combination method calling
             myclass.print(10, 20,30,40);//Four parameter combination method calling
             myclass.print(10, 20, 30, 40,50);//Five parameter combination method calling
+
+            //===========overload normal methods======================
+            //non static methods we are calling with (objectname.methodname());
+            myclass obj = new myclass();
+            obj.print("10");
+            obj.print("10", "20");
+            obj.print("10", "20", "30");
+            obj.print("10", "20", "30", "40");
         }
     }
 }
